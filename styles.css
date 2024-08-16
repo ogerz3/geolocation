@@ -1,0 +1,70 @@
+/* Основные стили для страницы */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+/* Контейнер для центрирования содержимого */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Стили для кнопки */
+.find-state {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.find-state:hover {
+    background-color: #0056b3;
+}
+
+.find-state:focus {
+    outline: none;
+}
+
+/* Стили для блока статуса */
+.status {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Респонсивные стили */
+@media (max-width: 768px) {
+    .find-state {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .status {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .find-state {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .status {
+        font-size: 14px;
+    }
+}
